@@ -170,9 +170,19 @@ result_df = max_avg_price_row.filter(col("7_Hour_Avg_Price") == col("max_7_Hour_
 # Show the result
 result_df.show()
 
+# Calculate the average gasoline prices for each petrol company
+avg_prices_df = merged_df.groupBy("Petrol_company").agg(avg("Price").alias("AveragePrice"))
+
+# Sort the DataFrame in descending order of AveragePrice
+sorted_avg_prices_df = avg_prices_df.orderBy(col("AveragePrice").desc())
+
+# Show the result
+sorted_avg_prices_df.show()
+
 # Define the specific 'fuel station type' and 'city' to analyze
 selected_fuel_station_type = 'Stradale'
 selected_city = 'AGRIGENTO'
+
 # Filter 'fuel_station_df' for the specific combination
 filtered_fuel_station_df = station_info_df.filter((col('Type') == selected_fuel_station_type) & (col('City') == selected_city))
 
