@@ -1,6 +1,11 @@
 # Fuel Price Data Analysis with PySpark
-
+**By: Sushan Kattel and Rojesh Pradhananga under mentorship of Amrit Prasad Phuyal at Fusemachines, Nepal**
 This project is a data analysis and processing pipeline implemented using PySpark. It performs various data operations on fuel price and station information data, providing valuable insights into fuel pricing and station locations.
+ - **data**: This folder contains raw data downloaded from below mentioned source along with parquet files created after preprocessing.
+ - **PresentationFiles**: This folder contains the presentation slides i both pdf and pptx format.
+ - **preprocess_data.ipynb**: This jupyter notebook file contains all the preprocessing that was performed on the data.
+ - **theFile.ipynb**: This is the project file in jupyter notebook.
+ - **projectFile.py**: This is the project file in python which can run with spark-submit.
 
 
 ## Data Sources
@@ -8,9 +13,10 @@ This project is a data analysis and processing pipeline implemented using PySpar
 The project uses the following data sources:
 The link to dataset used :
 https://www.kaggle.com/datasets/alessandrolobello/gasoline-hourly-price-tracker-from-2022?select=Hourly_Gasoline_Prices.csv
+
 ### Fuel Station Information (fuel_station_information.csv)
 
-This dataset contains information about fuel stations, including their managers, petrol companies, types, station names, cities, and coordinates.
+This dataset contains information about fuel stations, including petrol companies, types, station names, cities, and coordinates.
 
 - **Id**: Unique identifier for the fuel station.
 - **Fuel_station_manager**: Manager of the fuel station.
@@ -43,15 +49,15 @@ The project includes the following key functionalities:
 
 To run this project, you need the following Python packages:
 
-appdirs==1.4.3
-haversine==2.8.0
-requests==2.22.0
-findspark==2.0.1
+- appdirs==1.4.3
+- haversine==2.8.0
+- requests==2.22.0
+- findspark==2.0.1
 
 You can install these packages using the following command:
 `pip install -r requirements.txt`
 
-## Requirements
+
 To get started with the project, follow these steps:
 
     1. Clone the repository to your local machine.
