@@ -1,5 +1,6 @@
 # Fuel Price Data Analysis with PySpark
 **By: Sushan Kattel and Rojesh Pradhananga under mentorship of Amrit Prasad Phuyal at Fusemachines, Nepal**
+
 This project is a data analysis and processing pipeline implemented using PySpark. It performs various data operations on fuel price and station information data, providing valuable insights into fuel pricing and station locations.
  - **data**: This folder contains raw data downloaded from below mentioned source along with parquet files created after preprocessing.
  - **PresentationFiles**: This folder contains the presentation slides i both pdf and pptx format.
